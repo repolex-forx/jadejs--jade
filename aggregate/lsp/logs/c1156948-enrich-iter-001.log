@@ -1,0 +1,15 @@
+[2026-04-10T18:44:29Z] === ENRICH ITERATION 1 START | repo=jadejs/jade sha=c1156948 ===
+[2026-04-10T18:44:29Z] [iter=1] PHASE START: enrich repo=jadejs/jade sha=c1156948 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c1156948-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c1156948afb5a078449eca10ad26ff3ce4fd7a2f.nq.gz
+[2026-04-10T18:44:44Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-10T18:44:45Z] [iter=1] AST store loaded triples=95352 load_secs=1 mem_mb=210 MB
+[2026-04-10T18:44:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=210 MB
+[2026-04-10T18:44:45Z] [iter=1] LSP targets found call_sites=1190 imports=0 extends=0 implements=0 secs=0
+[2026-04-10T18:44:45Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=210 MB
+[2026-04-10T18:44:46Z] [iter=1] Position index built positions=6927 nodes_with_types=8082 secs=0 mem_mb=210 MB
+[2026-04-10T18:44:46Z] [iter=1] Step 3: Starting LSP resolution mem_mb=210 MB already_completed_types=[] already_completed_files=0
+[2026-04-10T18:44:46Z] [iter=1] Resolving target type target_type=call_site count=1190
+[2026-04-10T18:45:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=1 resolved=12 errors=556 current=test/error.reporting.js
+[2026-04-10T18:45:18Z] [iter=1] Target type resolved target_type=call_site resolved=61 errors=790 secs=32 mem_mb=210 MB
+[2026-04-10T18:45:20Z] [iter=1] Step 5: Writing final enrichment file triples=8195
+[2026-04-10T18:45:20Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/c1156948afb5a078449eca10ad26ff3ce4fd7a2f.nq.gz size_kb=120
+[2026-04-10T18:45:20Z] [iter=1] PHASE END: enrich elapsed_s=51 elapsed_min=0.9 total_triples=8195
